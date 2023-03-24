@@ -25,7 +25,7 @@ def index():
             return render_template("signup.html")
         else:
             custom_logger.info("User is logged in")
-            return render_template("index.html", user = session["user"])
+            return render_template("index.html", user = session["user"], list_of_titles = session["titleList"])
     except Exception as e:
         custom_logger.error(str(e))
 
