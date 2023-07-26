@@ -8,8 +8,8 @@ custom_logger_obj = custom_logger_class("serverActivity.log", __name__)
 custom_logger = custom_logger_obj.create_custom_logger()
 
 
-application = Flask(__name__)
-app=application
+app = Flask(__name__)
+
 custom_logger.info("Configuring session variable")
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
