@@ -11,7 +11,7 @@ class movies_extract_class:
 
     def fetch_list_of_movies(self):
         list_of_movies = []
-        for page in range(1,4):
+        for page in range(1,2):
             try:
                 url = ("https://www.imdb.com/list/ls055265443/?st_dt=&mode=detail&page="
                        +str(page) 
